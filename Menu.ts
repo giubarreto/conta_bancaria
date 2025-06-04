@@ -1,3 +1,5 @@
+import { ContaPoupanca } from './src/util/Model/Contapoupança';
+import { ContaCorrente } from './src/util/Model/Contacorrente';
 import { colors } from './src/util/Colors';
 import leia from "readline-sync"
 import {  Conta } from './src/util/Model/Conta';
@@ -5,16 +7,21 @@ import {  Conta } from './src/util/Model/Conta';
 
 export function main() {
     let opcao: number;
-    
- const conta: Conta = new Conta(1, 123, 1, "Adriana", 10000);
-    conta.visualizar();
-    conta.sacar(10500);
-    conta.visualizar();
-    conta.depositar(5000);
-    conta.visualizar();
 
 
+const contaCorrente: ContaCorrente = new ContaCorrente(1, 123, 1, "Giulia", 15000, 1000); //
+    contaCorrente.visualizar();     
+    contaCorrente.sacar(15000);
+    contaCorrente.visualizar();
+    contaCorrente.depositar(1000);
+    contaCorrente.visualizar();
 
+ const contaPoupanca: ContaPoupanca = new ContaPoupanca(2, 123, 2, "João", 1000, 10); //
+    contaPoupanca.visualizar();     
+    contaPoupanca.sacar(200);
+    contaPoupanca.visualizar();
+    contaPoupanca.depositar(1000);
+    contaPoupanca.visualizar();
 
 
 
