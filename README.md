@@ -1,5 +1,4 @@
 # 💰 Projeto Conta Bancária
-![Banner do projeto](./banner.png)
 
 Simulação de um sistema bancário com criação, listagem, atualização, exclusão, saques, depósitos e transferências entre contas. Desenvolvido com Programação Orientada a Objetos em TypeScript, utilizando o terminal com a biblioteca readline-sync.
 
